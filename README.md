@@ -21,21 +21,32 @@ We utilised aerial image data of Seoul. The data's labels are encoded as follows
 
 
 ### [2017_KRG_2LB_000887.png](./assets/2017_KRG_2LB_000887.png)
-| Ground-truth (Aerial image) | UperNet(Swin-T) (Aerial image)| Ground-truth (Mask)|UperNet(Swin-T) (Mask) |DeepLabV3(regnety_008) (Mask)|
-|:---:|:---:|:---:|:---:|:---:|
-|<img src="./assets/2017_KRG_2LB_000887_ground_truth_aerial_Img.png" width="400" height="200"/>|<img src="./assets/2017_KRG_2LB_000887_swinT_result_aerial_Img.png" width="400" height="200"/>|<img src="./assets/2017_KRG_2LB_000887_ground_truth_matplot.png" width="400" height="200"/>|<img src="./assets/2017_KRG_2LB_000887_swinT_result_matplot.png" width="400" height="200"/>|<img src="./assets/2017_KRG_2LB_000887_DeepLabV3_result_matplot.png" width="400" height="200"/>|
+| Ground-truth (Aerial image) | UperNet(Swin-T) (Aerial image)|  
+|:---:|:---:|  
+|<img src="./assets/2017_KRG_2LB_000887_ground_truth_aerial_Img.png" width="400" height="200"/>|<img src="./assets/2017_KRG_2LB_000887_swinT_result_aerial_Img.png" width="400" height="200"/>|   
 
+| Ground-truth (Mask)|UperNet(Swin-T) (Mask) |DeepLabV3(regnety_008) (Mask)|  
+|:---:|:---:|:---:|  
+|<img src="./assets/2017_KRG_2LB_000887_ground_truth_matplot.png" width="400" height="200"/>|<img src="./assets/2017_KRG_2LB_000887_swinT_result_matplot.png" width="400" height="200"/>|<img src="./assets/2017_KRG_2LB_000887_DeepLabV3_result_matplot.png" width="400" height="200"/>|  
 
 ### [2017_MPG_2LB_000631.png](./assets/2017_MPG_2LB_000631.png)
-| Ground-truth (Aerial image) | UperNet(Swin-T) (Aerial image)| Ground-truth (Mask)|UperNet(Swin-T) (Mask) |DeepLabV3(regnety_008) (Mask)|
-|:---:|:---:|:---:|:---:|:---:|
-|<img src="./assets/2017_MPG_2LB_000631_ground_truth_aerial_Img.png" width="400" height="200"/>|<img src="./assets/2017_MPG_2LB_000631_swinT_result_aerial_Img.png" width="400" height="200"/>|<img src="./assets/2017_MPG_2LB_000631_ground_truth_matplot.png" width="400" height="200"/>|<img src="./assets/2017_MPG_2LB_000631_swinT_result_matplot.png" width="400" height="200"/>|<img src="./assets/2017_MPG_2LB_000631_DeepLabV3_result_matplot.png" width="400" height="200"/>|
+| Ground-truth (Aerial image) | UperNet(Swin-T) (Aerial image)|  
+|:---:|:---:| 
+|<img src="./assets/2017_MPG_2LB_000631_ground_truth_aerial_Img.png" width="400" height="200"/>|<img src="./assets/2017_MPG_2LB_000631_swinT_result_aerial_Img.png" width="400" height="200"/>|
+
+| Ground-truth (Mask)|UperNet(Swin-T) (Mask) |DeepLabV3(regnety_008) (Mask)|  
+|:---:|:---:|:---:|  
+|<img src="./assets/2017_MPG_2LB_000631_ground_truth_matplot.png" width="400" height="200"/>|<img src="./assets/2017_MPG_2LB_000631_swinT_result_matplot.png" width="400" height="200"/>|<img src="./assets/2017_MPG_2LB_000631_DeepLabV3_result_matplot.png" width="400" height="200"/>|    
 
 
 ### [2019_KSG_1JY_000010.png](./assets/2019_KSG_1JY_000010.png)
-| Ground-truth (Aerial image) | UperNet(Swin-T) (Aerial image)| Ground-truth (Mask)|UperNet(Swin-T) (Mask) |DeepLabV3(regnety_008) (Mask)|
-|:---:|:---:|:---:|:---:|:---:|
-|<img src="./assets/2019_KSG_1JY_000010_ground_truth_aerial_Img.png" width="400" height="200"/>|<img src="./assets/2019_KSG_1JY_000010_swinT_result_aerial_Img.png" width="400" height="200"/>|<img src="./assets/2019_KSG_1JY_000010_ground_truth_matplot.png" width="400" height="200"/>|<img src="./assets/2019_KSG_1JY_000010_swinT_result_matplot.png" width="400" height="200"/>|<img src="./assets/2019_KSG_1JY_000010_DeepLabV3_result_matplot.png" width="400" height="200"/>|
+| Ground-truth (Aerial image) | UperNet(Swin-T) (Aerial image)| 
+|:---:|:---:|
+|<img src="./assets/2019_KSG_1JY_000010_ground_truth_aerial_Img.png" width="400" height="200"/>|<img src="./assets/2019_KSG_1JY_000010_swinT_result_aerial_Img.png" width="400" height="200"/>|
+
+|Ground-truth (Mask)|UperNet(Swin-T) (Mask) |DeepLabV3(regnety_008) (Mask)|  
+|:---:|:---:|:---:|  
+|<img src="./assets/2019_KSG_1JY_000010_ground_truth_matplot.png" width="400" height="200"/>|<img src="./assets/2019_KSG_1JY_000010_swinT_result_matplot.png" width="400" height="200"/>|<img src="./assets/2019_KSG_1JY_000010_DeepLabV3_result_matplot.png" width="400" height="200"/>|  
 
 
 ## Experiments
