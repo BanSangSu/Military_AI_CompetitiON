@@ -11,11 +11,11 @@
 We developed a model for **building change detection**. Using about **10+ remote computers**, we experimented with models using DeeplabV3, DeeplabV3+, Unet, Unet++, FPN, Linknet, MAnet, PSPNet, and PAN as methods and RegNetY008, RegNetY032, and EfficientNetB4 as backbones. We also ventured into models that utilized the Swin Transformer (specifically Swin-L and Swin-T) as backbones with UPerNet methods from [mmsegmentation](https://github.com/open-mmlab/mmsegmentation). To evaluate the models, we relied on mIOU as our metric. Among our models, the model combining the **DeeplabV3** method with the **RegNetY008** backbone emerged as the best performer, boasting an mIOU score of **0.6830**.
 
 ## Datasets
-We utilised aerial image data of Seoul. The data's labels are encoded as follows: 'Background' (indicating no change) is **0**, 'New' is **1**, 'Destroy' is **2**, and 'Update' is **3**.
+We utilised aerial image data of Seoul. The data's labels are encoded as follows: 'Background' (indicating no change) is **0**, 'New' is **1**, 'Destroyed' is **2**, and 'Update' is **3**.
 
-| New | Destroy | Update |
+| New | Destroyed | Update |
 |:---:|:---:|:---:|
-|![dataset_new](./assets/dataset_new.png)|![dataset_destroy](./assets/dataset_destroy.png)|![dataset_update](./assets/dataset_update.png)|
+|![dataset_new](./assets/dataset_new.png)|![dataset_destroyed](./assets/dataset_destroy.png)|![dataset_update](./assets/dataset_update.png)|
 
 ## Results
 
@@ -78,9 +78,9 @@ Note:
 - mIOU@2 is the Competition loss measured in competition. 
 
 ## Summary
-The model that combinded **DeepLabV3** method with **RegNetY008** backbone achieved an mIOU score of **0.6830**. As you may already know, models with Transformer backbone are leading the way in many change detection tasks, as you can see on this [site](https://paperswithcode.com/sota/change-detection-on-dsifn-cd?p=a-transformer-based-siamese-network-for). However, in our specific task, these models were too large to train and to optimise hyperparameters within the competition period. Furthermore, our available equipment lacked the capacity to handle the computational demands of these large transformer models, which have a significant number of parameters. Consequently, we used small transformer models during the competition.
+The model that combinded **DeepLabV3** method with **RegNetY008** backbone achieved an mIOU score of **0.6830**. As you may already know, models with Transformer backbone are leading the way in many change detection tasks, as you can see [here](https://paperswithcode.com/sota/change-detection-on-dsifn-cd?p=a-transformer-based-siamese-network-for). However, in our specific task, these models were too large to train, so it was not feasible to optimise hyperparameters within the time-limited competition period. Furthermore, our available equipment lacked the capacity to handle the computational demands of these large transformer models, which have a significant number of parameters. Consequently, we used small transformer models during the competition.
 
-After the competition, I conducted additional experiments on transformer models. As a result, I figured out that the input data in this problem has a single-image containing before and after changes, unlike typical change detection problems where they use two inputs, before the change and after the change, and train each encoder for each input. This type of single-image input data prevents transformer models or any large model from extracting the correct features. Therefore to improve performance using transformer models, it is essential to reconstruct basic models consisting of two encoders for two input data.
+After the competition, I conducted additional experiments on transformer models. As a result, I figured out that the input data in this problem has a single-image containing both before and after changes, unlike typical change detection problems where they use two inputs (one for before the change and the other for after the change), and corresponding encoders for training. This type of single-image input data prevents transformer models or any large model from extracting the correct features. Therefore to improve performance using transformer models, it is essential to reconstruct basic models consisting of two encoders for two input data.
 
 ## License
 This repository is released under the MIT license as found in the [LICENSE](LICENSE) file.
