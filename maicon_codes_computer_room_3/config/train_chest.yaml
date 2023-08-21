@@ -1,0 +1,57 @@
+# System
+gpu_num: 0
+seed: 999
+debug: False
+verbose: False
+
+# Train / val
+val_size: 0.05
+
+# Data Loader
+input_width: 512
+input_height: 512
+scaler: normalize
+num_workers: 16
+shuffle: True
+drop_last: False
+
+# Model
+architecture: Unet
+encoder: timm-efficientnet-b8 #timm-efficientnet-b4 #timm-regnety_032 #timm-regnety_016
+encoder_weight: advprop #noisy-student #advprop #imagenet
+depth: 5
+n_classes: 3
+activation: null
+
+# Trainer
+n_epochs: 1000
+batch_size: 2
+loss: 
+  name: DiceBCELoss # MeanCCELoss
+  args:
+    weight: [1, 1, 1]
+metrics: 
+  - dice_coef
+  # - iou1
+  # - iou2
+  # - iou3
+earlystopping_target: val_dice_coef
+earlystopping_patience: 100
+optimizer:
+  name: AdamW
+  args:
+    lr: 5.0e-04
+    weight_decay: 5.0e-02
+scheduler:
+  name: CosineAnnealingLR
+  args:
+    T_max: 100
+    eta_min: 0
+
+# Logging
+plot:
+  - loss
+  - dice_coef
+  # - iou1
+  # - iou2
+  # - iou3

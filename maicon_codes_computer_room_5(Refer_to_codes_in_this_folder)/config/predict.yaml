@@ -1,0 +1,14 @@
+# System
+gpu_num: 0
+
+# Model
+# train_serial: '20221025_145511' # ex) '20221012_174254'
+# train_serial: 'DeepLabV3Plus/20221111_015224' # ex) '20221012_174254'
+train_serial: 'DeepLabV3/20221113_010847(best)(DeepLabV3_regnety008)' # best / DeepLabV3_regnety008
+
+# Data
+batch_size: 16
+num_workers: 4
+
+# Logging
+verbose: false
